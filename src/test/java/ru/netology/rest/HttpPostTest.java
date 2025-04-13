@@ -19,7 +19,7 @@ public class HttpPostTest {
                 .post("/post")
                 .then()
                 .statusCode(200)
-                .body("WrongData", equalTo("some data")); // Проверка поля
+                .body("data", equalTo("some data")); // Проверка поля
     }
 
 }
